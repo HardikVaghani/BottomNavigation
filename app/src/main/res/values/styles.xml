@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="Widget.Theme.BottomNavigationWithTabLayout.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.BottomNavigationWithTabLayout.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Disable default ActionBar -->
+        <item name="windowActionBar">false</item>
+        <!-- Remove the title bar -->
+        <item name="windowNoTitle">true</item>
+        <!-- Other style attributes -->
+    </style>
+</resources>

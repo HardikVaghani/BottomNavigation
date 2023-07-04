@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+android:inset="6dp">
+    <selector>
+        <!-- Tab indicator for the selected tab -->
+        <item
+            android:drawable="@drawable/selected_tab_background"
+            android:state_selected="true" />
+
+        <!-- Tab indicator for the default/unselected tabs -->
+        <item android:drawable="@drawable/default_tab_background" />
+
+    </selector>
+
+    <!--    <layer-list >-->
+    <!-- Background for the unselected tabs -->
+    <!--        <item android:drawable="@android:color/darker_gray" />-->
+
+    <!-- Indicator for the selected tab -->
+    <!--        <item android:drawable="@android:color/black"-->
+    <!--            android:gravity="bottom"-->
+    <!--            android:height="2dp" /> -->
+    <!-- Customize the height of the indicator as needed -->
+    <!--    </layer-list>-->
+
+</inset>

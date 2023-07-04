@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue_A200"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <TextView
+        android:id="@+id/text_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/profileTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:tabBackground="@drawable/custom_tab_indicator"
+        app:tabGravity="fill"
+        app:tabIndicatorAnimationDuration="@integer/material_motion_duration_medium_1"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorColor="@color/tabIndicatorColor"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="scrollable"
+        app:tabRippleColor="@color/custom_ripple_color"
+        app:tabSelectedTextAppearance="@integer/material_motion_duration_medium_1"
+        app:tabSelectedTextColor="@color/tabSelectedTextColor"
+        app:tabTextAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:tabTextColor="@color/tabDefaultTextColor"
+        app:tabUnboundedRipple="true"
+        tools:ignore="SpeakableTextPresent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/profileViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingClass" />
+
+</LinearLayout>
